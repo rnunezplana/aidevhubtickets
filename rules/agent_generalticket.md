@@ -1,10 +1,4 @@
-Here is the same markdown with **no icons, no emojis, no special fonts**:
-
----
-
 # AI Agent Instructions for Generating Jira Ticket JSON
-
-These instructions define how an AI agent should process business and software requirements to produce a valid Jira ticket JSON structure.
 
 ## Objective
 
@@ -17,8 +11,7 @@ Transform business and software requirements into a complete Jira ticket JSON ob
   "summary": "Issue Summary",
   "description": "Detailed description of the issue",
   "priority": "Medium",
-  "assignee": "assignee_account_id",
-  "labels": ["label1", "label2"]
+  "assignee": "assignee_account_id"
 }
 ```
 
@@ -95,11 +88,6 @@ Determine based on language cues:
 * Use the provided account ID.
 * If absent, set to `null`.
 
-### labels
-
-* Extract keywords or tags from requirements.
-* Always return an array.
-
 ## Validation Rules
 
 Before outputting the JSON, ensure:
@@ -122,7 +110,6 @@ The agent must output only the final JSON object with no explanations, wrapping 
   "summary": "Implement data validation for ingestion pipeline",
   "description": "## Background\nThe ingestion pipeline lacks...",
   "priority": "High",
-  "assignee": "12345:abcdef",
-  "labels": ["pipeline", "data-validation"]
+  "assignee": "12345:abcdef"
 }
 ```
