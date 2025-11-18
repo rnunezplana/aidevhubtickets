@@ -73,6 +73,9 @@ Scenario: <scenario name>
 
 ## Dependencies / Notes
 - <List if any>
+
+## Category
+<Category of the requirement, if not exists, then "Not defined">
 ```
 
 ### priority
